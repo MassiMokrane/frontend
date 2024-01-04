@@ -8,7 +8,7 @@ const MainHeader = () => {
 				<h1>
 					Bienvenue à <span className="hotel-color"> ADM-Réservation</span>
 				</h1>
-				<h4>Découvrez la meilleure hospitalité de la ville</h4>
+				<h4>Découvrez la meilleur entreprise de réservations de salles du moment</h4>
 			</div>
 		</header>
 	)
