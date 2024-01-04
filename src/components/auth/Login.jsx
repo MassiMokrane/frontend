@@ -37,7 +37,7 @@ const Login = () => {
 	return (
 		<section className="container col-6 mt-5 mb-5">
 			{errorMessage && <p className="alert alert-danger">{errorMessage}</p>}
-			<h2>Login</h2>
+			<h2>se connecter</h2>
 			<form onSubmit={handleSubmit}>
 				<div className="row mb-3">
 					<label htmlFor="email" className="col-sm-2 col-form-label">
@@ -57,7 +57,7 @@ const Login = () => {
 
 				<div className="row mb-3">
 					<label htmlFor="password" className="col-sm-2 col-form-label">
-						Password
+					Mot de passe
 					</label>
 					<div>
 						<input
@@ -73,10 +73,10 @@ const Login = () => {
 
 				<div className="mb-3">
 					<button type="submit" className="btn btn-hotel" style={{ marginRight: "10px" }}>
-						Login
+						se connecter 
 					</button>
 					<span style={{ marginLeft: "10px" }}>
-						Don't' have an account yet?<Link to={"/register"}> Register</Link>
+					Vous n'avez pas encore de compte?<Link to={"/register"}> Registre</Link>
 					</span>
 				</div>
 			</form>
