@@ -19,7 +19,7 @@ const HotelService = () => {
 
 				<Row className="mt-4">
 					<h4 className="text-center">
-					Services à <span className="hotel-color"> ADM </span>réservation
+					Services<span className="hotel-color"> ADM </span>Réservation
 						<span className="gap-2">
 							<FaClock className="ml-5" /> Réception ouverte 24h/24
 						</span>
@@ -34,7 +34,7 @@ const HotelService = () => {
 								<Card.Title className="hotel-color">
 									<FaWifi /> WiFi
 								</Card.Title>
-								<Card.Text>Restez connecté grâce à un accès Internet haut débit.</Card.Text>
+								<Card.Text>Restez connecté grâce à un accès Internet haut débit dans toutes nos salles.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -45,7 +45,7 @@ const HotelService = () => {
 								<Card.Title className="hotel-color">
 									<FaCocktail />Mini-bar
 								</Card.Title>
-								<Card.Text>Profitez d'une boisson rafraîchissante ou d'une collation dans notre minibar dans la chambre.</Card.Text>
+								<Card.Text>Profitez d'une boisson rafraîchissante ou d'une collation dans notre minibar dans chaque salle.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -55,7 +55,7 @@ const HotelService = () => {
 								<Card.Title className="hotel-color">
 									<FaParking /> Parking
 								</Card.Title>
-								<Card.Text>Park your car conveniently in our on-site parking lot.</Card.Text>
+								<Card.Text>Parking à votre disposition pour tout les visiteurs.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -63,9 +63,9 @@ const HotelService = () => {
 						<Card>
 							<Card.Body>
 								<Card.Title className="hotel-color">
-									<FaSnowflake /> Air conditioning
+									<FaSnowflake /> Salles climatisé
 								</Card.Title>
-								<Card.Text>Stay cool and comfortable with our air conditioning system.</Card.Text>
+								<Card.Text>Rester aux  frais, cool and comfortable with our air conditioning system.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
