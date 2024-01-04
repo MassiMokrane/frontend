@@ -107,9 +107,9 @@ const ExistingRooms = () => {
 							<thead>
 								<tr className="text-center">
 									<th>ID</th>
-									<th>Room Type</th>
-									<th>Room Price</th>
-									<th>Actions</th>
+									<th>Rtype de salle</th>
+									<th>prix de salle</th>
+									<th>Action</th>
 								</tr>
 							</thead>
 

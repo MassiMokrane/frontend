@@ -118,7 +118,7 @@ const AddRoom = () => {
 								Salles existantes
 								</Link>
 								<button type="submit" className="btn btn-outline-primary ml-5">
-								Salle de sauvegarde
+									Sauvgarder Salle 
 								</button>
 							</div>
 						</form>
