@@ -82,12 +82,13 @@ const ExistingRooms = () => {
 			</div>
 
 			{isLoading ? (
-				<p>Loading existing rooms</p>
+				<p>
+				Chargement des salles existantes</p>
 			) : (
 				<>
 					<section className="mt-5 mb-5 container">
 						<div className="d-flex justify-content-between mb-3 mt-5">
-							<h2>Existing Rooms</h2>
+							<h2>Salles existantes</h2>
 						</div>
 
 						<Row>
@@ -97,7 +98,7 @@ const ExistingRooms = () => {
 
 							<Col md={6} className="d-flex justify-content-end">
 								<Link to={"/add-room"}>
-									<FaPlus /> Add Room
+									<FaPlus /> Ajouter salle
 								</Link>
 							</Col>
 						</Row>
