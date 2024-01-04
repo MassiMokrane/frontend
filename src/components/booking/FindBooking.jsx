@@ -109,26 +109,26 @@ const FindBooking = () => {
 						<h3>Informations de réservation</h3>
 						<p className="text-success">Code de confirmation: {bookingInfo.bookingConfirmationCode}</p>
 						<p>Numéro de salle: {bookingInfo.room.id}</p>
-						<p>Rtype de salle:{bookingInfo.room.roomType}</p>
+						<p>type de salle:{bookingInfo.room.roomType}</p>
 						<p>
-							Check-in Date:{" "}
+						Date d'arrivée :{" "}
 							{moment(bookingInfo.checkInDate).subtract(1, "month").format("MMM Do, YYYY")}
 						</p>
 						<p>
-							Check-out Date:{" "}
+						Date de départ :{" "}
 							{moment(bookingInfo.checkInDate).subtract(1, "month").format("MMM Do, YYYY")}
 						</p>
-						<p>Full Name: {bookingInfo.guestName}</p>
-						<p>Email Address: {bookingInfo.guestEmail}</p>
-						<p>Adults: {bookingInfo.numOfAdults}</p>
-						<p>Children: {bookingInfo.numOfChildren}</p>
-						<p>Total Guest: {bookingInfo.totalNumOfGuests}</p>
+						<p>Nom et prénom: {bookingInfo.guestName}</p>
+						<p>Adresse e-mail:{bookingInfo.guestEmail}</p>
+						<p>Adultes: {bookingInfo.numOfAdults}</p>
+						<p>Enfants: {bookingInfo.numOfChildren}</p>
+						<p>Nombre total d'invités : {bookingInfo.totalNumOfGuests}</p>
 
 						{!isDeleted && (
 							<button
 								onClick={() => handleBookingCancellation(bookingInfo.id)}
 								className="btn btn-danger">
-								Cancel Booking
+								Annuler la réservation
 							</button>
 						)}
 					</div>
