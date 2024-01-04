@@ -19,9 +19,9 @@ const HotelService = () => {
 
 				<Row className="mt-4">
 					<h4 className="text-center">
-						Services at <span className="hotel-color"> lakeSide - </span>Hotel
+					Services à <span className="hotel-color"> ADM </span>réservation
 						<span className="gap-2">
-							<FaClock className="ml-5" /> 24-Hour Front Desk
+							<FaClock className="ml-5" /> Réception ouverte 24h/24
 						</span>
 					</h4>
 				</Row>
@@ -34,37 +34,18 @@ const HotelService = () => {
 								<Card.Title className="hotel-color">
 									<FaWifi /> WiFi
 								</Card.Title>
-								<Card.Text>Stay connected with high-speed internet access.</Card.Text>
+								<Card.Text>Restez connecté grâce à un accès Internet haut débit.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
+					
 					<Col>
 						<Card>
 							<Card.Body>
 								<Card.Title className="hotel-color">
-									<FaUtensils /> Breakfast
+									<FaCocktail />Mini-bar
 								</Card.Title>
-								<Card.Text>Start your day with a delicious breakfast buffet.</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card>
-							<Card.Body>
-								<Card.Title className="hotel-color">
-									<FaTshirt /> Laundry
-								</Card.Title>
-								<Card.Text>Keep your clothes clean and fresh with our laundry service.</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card>
-							<Card.Body>
-								<Card.Title className="hotel-color">
-									<FaCocktail /> Mini-bar
-								</Card.Title>
-								<Card.Text>Enjoy a refreshing drink or snack from our in-room mini-bar.</Card.Text>
+								<Card.Text>Profitez d'une boisson rafraîchissante ou d'une collation dans notre minibar dans la chambre.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
