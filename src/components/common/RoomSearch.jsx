@@ -79,7 +79,7 @@ const RoomSearch = () => {
 						</Col>
 						<Col xs={12} md={3}>
 							<Form.Group controlId="checkOutDate">
-								<Form.Label>Check-out Date</Form.Label>
+								<Form.Label>Date de départ</Form.Label>
 								<Form.Control
 									type="date"
 									name="checkOutDate"
@@ -98,7 +98,7 @@ const RoomSearch = () => {
 										newRoom={searchQuery}
 									/>
 									<Button variant="secondary" type="submit" className="ml-2">
-										Search
+									Recherche
 									</Button>
 								</div>
 							</Form.Group>
@@ -107,11 +107,11 @@ const RoomSearch = () => {
 				</Form>
 
 				{isLoading ? (
-					<p className="mt-4">Finding availble rooms....</p>
+					<p className="mt-4">Recherche de salles disponibles....</p>
 				) : availableRooms ? (
 					<RoomSearchResults results={availableRooms} onClearSearch={handleClearSearch} />
 				) : (
-					<p className="mt-4">No rooms available for the selected dates and room type.</p>
+					<p className="mt-4">Aucune salles disponible pour les dates et le type de chambre sélectionnés.</p>
 				)}
 				{errorMessage && <p className="text-danger">{errorMessage}</p>}
 			</Container>
