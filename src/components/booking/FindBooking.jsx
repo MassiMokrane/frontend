@@ -90,7 +90,7 @@ const FindBooking = () => {
 							name="confirmationCode"
 							value={confirmationCode}
 							onChange={handleInputChange}
-							placeholder="Enter the booking confirmation code"
+							placeholder="Entrer le code de confirmation"
 						/>
 
 						<button type="submit" className="btn btn-hotel input-group-text">
@@ -133,7 +133,7 @@ const FindBooking = () => {
 						)}
 					</div>
 				) : (
-					<div>find booking...</div>
+					<div>chargement...</div>
 				)}
 
 				{isDeleted && <div className="alert alert-success mt-3 fade show">{successMessage}</div>}
