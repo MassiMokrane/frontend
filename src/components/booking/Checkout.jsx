@@ -45,7 +45,7 @@ const Checkout = () => {
 				<div className="row">
 					<div className="col-md-4 mt-5 mb-5">
 						{isLoading ? (
-							<p>Loading room information...</p>
+							<p>Chargement des informations sur la salle...</p>
 						) : error ? (
 							<p>{error}</p>
 						) : (
@@ -58,15 +58,15 @@ const Checkout = () => {
 								<table className="table table-bordered">
 									<tbody>
 										<tr>
-											<th>Room Type:</th>
+											<th>Type de chambre:</th>
 											<td>{roomInfo.roomType}</td>
 										</tr>
 										<tr>
-											<th>Price per night:</th>
+											<th>Prix ​​par nuit:</th>
 											<td>${roomInfo.roomPrice}</td>
 										</tr>
 										<tr>
-											<th>Room Service:</th>
+											<th>Service de chambre:</th>
 											<td>
 												<ul className="list-unstyled">
 													<li>

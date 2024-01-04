@@ -63,14 +63,14 @@ const BookingsTable = ({ bookingInfo, handleBookingCancellation }) => {
 								<button
 									className="btn btn-danger btn-sm"
 									onClick={() => handleBookingCancellation(booking.id)}>
-									Cancel
+									Annuler
 								</button>
 							</td>
 						</tr>
 					))}
 				</tbody>
 			</table>
-			{filterBooknigs.length === 0 && <p> No booking found for the selected dates</p>}
+			{filterBooknigs.length === 0 && <p> Aucune réservation trouvée pour les dates sélectionnées</p>}
 		</section>
 	)
 }

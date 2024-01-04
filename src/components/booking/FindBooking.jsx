@@ -80,7 +80,7 @@ const FindBooking = () => {
 	return (
 		<>
 			<div className="container mt-5 d-flex flex-column justify-content-center align-items-center">
-				<h2 className="text-center mb-4">Find My Booking</h2>
+				<h2 className="text-center mb-4">Trouver ma réservation</h2>
 				<form onSubmit={handleFormSubmit} className="col-md-6">
 					<div className="input-group mb-3">
 						<input
@@ -94,21 +94,22 @@ const FindBooking = () => {
 						/>
 
 						<button type="submit" className="btn btn-hotel input-group-text">
-							Find booking
+						Trouver une réservation
 						</button>
 					</div>
 				</form>
 
 				{isLoading ? (
-					<div>Finding your booking...</div>
+					<div>
+					Trouver votre réservation...</div>
 				) : error ? (
 					<div className="text-danger">Error: {error}</div>
 				) : bookingInfo.bookingConfirmationCode ? (
 					<div className="col-md-6 mt-4 mb-5">
-						<h3>Booking Information</h3>
-						<p className="text-success">Confirmation Code: {bookingInfo.bookingConfirmationCode}</p>
-						<p>Room Number: {bookingInfo.room.id}</p>
-						<p>Room Type: {bookingInfo.room.roomType}</p>
+						<h3>Informations de réservation</h3>
+						<p className="text-success">Code de confirmation: {bookingInfo.bookingConfirmationCode}</p>
+						<p>Numéro de salle: {bookingInfo.room.id}</p>
+						<p>Rtype de salle:{bookingInfo.room.roomType}</p>
 						<p>
 							Check-in Date:{" "}
 							{moment(bookingInfo.checkInDate).subtract(1, "month").format("MMM Do, YYYY")}

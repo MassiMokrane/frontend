@@ -12,12 +12,12 @@ const BookingSuccess = () => {
 			<div className="mt-5">
 				{message ? (
 					<div>
-						<h3 className="text-success"> Booking Success!</h3>
+						<h3 className="text-success"> Succès de la réservation!</h3>
 						<p className="text-success">{message}</p>
 					</div>
 				) : (
 					<div>
-						<h3 className="text-danger"> Error Booking Room!</h3>
+						<h3 className="text-danger"> Erreur de réservation de chambre !</h3>
 						<p className="text-danger">{error}</p>
 						
 					</div>
