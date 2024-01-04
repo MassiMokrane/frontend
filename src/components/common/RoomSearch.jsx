@@ -67,7 +67,7 @@ const RoomSearch = () => {
 					<Row className="justify-content-center">
 						<Col xs={12} md={3}>
 							<Form.Group controlId="checkInDate">
-								<Form.Label>Check-in Date</Form.Label>
+								<Form.Label>Date d'arrivée</Form.Label>
 								<Form.Control
 									type="date"
 									name="checkInDate"
@@ -91,7 +91,7 @@ const RoomSearch = () => {
 						</Col>
 						<Col xs={12} md={3}>
 							<Form.Group controlId="roomType">
-								<Form.Label>Room Type</Form.Label>
+								<Form.Label>type de salle</Form.Label>
 								<div className="d-flex">
 									<RoomTypeSelector
 										handleRoomInputChange={handleInputChange}
