@@ -43,7 +43,7 @@ const Registration = () => {
 			<form onSubmit={handleRegistration}>
 				<div className="mb-3 row">
 					<label htmlFor="firstName" className="col-sm-2 col-form-label">
-						first Name
+					prénom
 					</label>
 					<div className="col-sm-10">
 						<input
@@ -59,7 +59,7 @@ const Registration = () => {
 
 				<div className="mb-3 row">
 					<label htmlFor="lastName" className="col-sm-2 col-form-label">
-						Last Name
+					Nom de famille
 					</label>
 					<div className="col-sm-10">
 						<input
@@ -91,7 +91,7 @@ const Registration = () => {
 
 				<div className="mb-3 row">
 					<label htmlFor="password" className="col-sm-2 col-form-label">
-						Password
+					Mot de passe
 					</label>
 					<div className="col-sm-10">
 						<input
@@ -106,10 +106,10 @@ const Registration = () => {
 				</div>
 				<div className="mb-3">
 					<button type="submit" className="btn btn-hotel" style={{ marginRight: "10px" }}>
-						Register
+					Registre
 					</button>
 					<span style={{ marginLeft: "10px" }}>
-						Already have an account? <Link to={"/login"}>Login</Link>
+					Vous avez déjà un compte? <Link to={"/login"}>se connecter</Link>
 					</span>
 				</div>
 			</form>

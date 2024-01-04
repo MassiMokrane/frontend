@@ -101,12 +101,12 @@ const currentUser = localStorage.getItem("userId")
 				<div className="row">
 					<div className="col-md-6">
 						<div className="card card-body mt-5">
-							<h4 className="card-title">Reserve Room</h4>
+							<h4 className="card-title">Réserver une chambre</h4>
 
 							<Form noValidate validated={validated} onSubmit={handleSubmit}>
 								<Form.Group>
 									<Form.Label htmlFor="guestFullName" className="hotel-color">
-										Fullname
+									Nom et prénom
 									</Form.Label>
 									<FormControl
 										required
@@ -118,7 +118,7 @@ const currentUser = localStorage.getItem("userId")
 										onChange={handleInputChange}
 									/>
 									<Form.Control.Feedback type="invalid">
-										Please enter your fullname.
+									S'il vous plait entrez votre nom entier.
 									</Form.Control.Feedback>
 								</Form.Group>
 
@@ -137,16 +137,16 @@ const currentUser = localStorage.getItem("userId")
 										disabled
 									/>
 									<Form.Control.Feedback type="invalid">
-										Please enter a valid email address.
+									S'il vous plaît, mettez une adresse email valide.
 									</Form.Control.Feedback>
 								</Form.Group>
 
 								<fieldset style={{ border: "2px" }}>
-									<legend>Lodging Period</legend>
+									<legend>Période d'hébergement</legend>
 									<div className="row">
 										<div className="col-6">
 											<Form.Label htmlFor="checkInDate" className="hotel-color">
-												Check-in date
+											Date d'arrivée
 											</Form.Label>
 											<FormControl
 												required
@@ -159,13 +159,13 @@ const currentUser = localStorage.getItem("userId")
 												onChange={handleInputChange}
 											/>
 											<Form.Control.Feedback type="invalid">
-												Please select a check in date.
+											Veuillez sélectionner une date d'arrivée.
 											</Form.Control.Feedback>
 										</div>
 
 										<div className="col-6">
 											<Form.Label htmlFor="checkOutDate" className="hotel-color">
-												Check-out date
+											Date de départ
 											</Form.Label>
 											<FormControl
 												required
@@ -178,7 +178,7 @@ const currentUser = localStorage.getItem("userId")
 												onChange={handleInputChange}
 											/>
 											<Form.Control.Feedback type="invalid">
-												Please select a check out date.
+											Veuillez sélectionner une date de départ.
 											</Form.Control.Feedback>
 										</div>
 										{errorMessage && <p className="error-message text-danger">{errorMessage}</p>}
@@ -229,7 +229,7 @@ const currentUser = localStorage.getItem("userId")
 
 								<div className="fom-group mt-2 mb-2">
 									<button type="submit" className="btn btn-hotel">
-										Continue
+										Continuer
 									</button>
 								</div>
 							</Form>
