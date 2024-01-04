@@ -81,7 +81,7 @@ const Profile = () => {
 			{message && <p className="text-danger">{message}</p>}
 			{user ? (
 				<div className="card p-5 mt-5" style={{ backgroundColor: "whitesmoke" }}>
-					<h4 className="card-title text-center">User Information</h4>
+					<h4 className="card-title text-center">Informations utilisateur</h4>
 					<div className="card-body">
 						<div className="col-md-10 mx-auto">
 							<div className="card mb-3 shadow">
@@ -148,7 +148,7 @@ const Profile = () => {
 								</div>
 							</div>
 
-							<h4 className="card-title text-center">Booking History</h4>
+							<h4 className="card-title text-center">Historique des réservations</h4>
 
 							{bookings.length > 0 ? (
 								<table className="table table-bordered table-hover shadow">
@@ -178,19 +178,19 @@ const Profile = () => {
 														.format("MMM Do, YYYY")}
 												</td>
 												<td>{booking.bookingConfirmationCode}</td>
-												<td className="text-success">On-going</td>
+												<td className="text-success">En cours</td>
 											</tr>
 										))}
 									</tbody>
 								</table>
 							) : (
-								<p>You have not made any bookings yet.</p>
+								<p>Vous n'avez pas encore effectué de réservation.</p>
 							)}
 
 							<div className="d-flex justify-content-center">
 								<div className="mx-2">
 									<button className="btn btn-danger btn-sm" onClick={handleDeleteAccount}>
-										Close account
+									Fermer le compte
 									</button>
 								</div>
 							</div>
@@ -198,7 +198,7 @@ const Profile = () => {
 					</div>
 				</div>
 			) : (
-				<p>Loading user data...</p>
+				<p>Chargement des données utilisateur...</p>
 			)}
 		</div>
 	)
