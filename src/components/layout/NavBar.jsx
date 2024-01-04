@@ -35,7 +35,7 @@ const NavBar = () => {
 					<ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
 						<li className="nav-item">
 							<NavLink className="nav-link" aria-current="page" to={"/browse-all-rooms"}>
-								Parcourir toutes les chambres
+								Parcourir les Salles
 							</NavLink>
 						</li>
 
@@ -51,7 +51,7 @@ const NavBar = () => {
 					<ul className="d-flex navbar-nav">
 						<li className="nav-item">
 							<NavLink className="nav-link" to={"/find-booking"}>
-							Trouver ma réservation
+							Mes Réservation
 							</NavLink>
 						</li>
 
@@ -64,7 +64,7 @@ const NavBar = () => {
 								aria-expanded="false"
 								onClick={handleAccountClick}>
 								{" "}
-								Compte
+								Mon-Compte
 							</a>
 
 							<ul
