@@ -27,7 +27,7 @@ const Room = () => {
 			})
 	}, [])
 	if (isLoading) {
-		return <div>Loading rooms.....</div>
+		return <div>chargement de salles ...</div>
 	}
 	if (error) {
 		return <div className=" text-danger">Error : {error}</div>

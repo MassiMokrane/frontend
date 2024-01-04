@@ -59,7 +59,7 @@ const AddRoom = () => {
 			<section className="container mt-5 mb-5">
 				<div className="row justify-content-center">
 					<div className="col-md-8 col-lg-6">
-						<h2 className="mt-5 mb-2">Add a New Room</h2>
+						<h2 className="mt-5 mb-2">Ajouter une salle</h2>
 						{successMessage && (
 							<div className="alert alert-success fade show"> {successMessage}</div>
 						)}
@@ -69,7 +69,7 @@ const AddRoom = () => {
 						<form onSubmit={handleSubmit}>
 							<div className="mb-3">
 								<label htmlFor="roomType" className="form-label">
-									Room Type
+									type de salle
 								</label>
 								<div>
 									<RoomTypeSelector
@@ -80,7 +80,7 @@ const AddRoom = () => {
 							</div>
 							<div className="mb-3">
 								<label htmlFor="roomPrice" className="form-label">
-									Room Price
+									prix de salle
 								</label>
 								<input
 									required
@@ -95,7 +95,7 @@ const AddRoom = () => {
 
 							<div className="mb-3">
 								<label htmlFor="photo" className="form-label">
-									Room Photo
+									photo de salle
 								</label>
 								<input
 									required
@@ -115,10 +115,10 @@ const AddRoom = () => {
 							</div>
 							<div className="d-grid gap-2 d-md-flex mt-2">
 								<Link to={"/existing-rooms"} className="btn btn-outline-info">
-									Existing rooms
+								Salles existantes
 								</Link>
 								<button type="submit" className="btn btn-outline-primary ml-5">
-									Save Room
+									Sauvgarder Salle 
 								</button>
 							</div>
 						</form>

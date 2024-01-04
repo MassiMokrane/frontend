@@ -61,7 +61,7 @@ const EditRoom = () => {
 
 	return (
 		<div className="container mt-5 mb-5">
-			<h3 className="text-center mb-5 mt-5">Edit Room</h3>
+			<h3 className="text-center mb-5 mt-5">modifier salle</h3>
 			<div className="row justify-content-center">
 				<div className="col-md-8 col-lg-6">
 					{successMessage && (
@@ -77,7 +77,7 @@ const EditRoom = () => {
 					<form onSubmit={handleSubmit}>
 						<div className="mb-3">
 							<label htmlFor="roomType" className="form-label hotel-color">
-								Room Type
+								type salle
 							</label>
 							<input
 								type="text"
@@ -90,7 +90,7 @@ const EditRoom = () => {
 						</div>
 						<div className="mb-3">
 							<label htmlFor="roomPrice" className="form-label hotel-color">
-								Room Price
+								prix salle
 							</label>
 							<input
 								type="number"
@@ -104,7 +104,7 @@ const EditRoom = () => {
 
 						<div className="mb-3">
 							<label htmlFor="photo" className="form-label hotel-color">
-								Photo
+								Photo salle
 							</label>
 							<input
 								required
@@ -125,10 +125,10 @@ const EditRoom = () => {
 						</div>
 						<div className="d-grid gap-2 d-md-flex mt-2">
 							<Link to={"/existing-rooms"} className="btn btn-outline-info ml-5">
-								back
+								Retour
 							</Link>
 							<button type="submit" className="btn btn-outline-warning">
-								Edit Room
+								modifier salle
 							</button>
 						</div>
 					</form>
